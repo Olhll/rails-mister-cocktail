@@ -1,0 +1,26 @@
+<h3><%= @cocktail.name %></h3>
+<p>Here are the ingredients : </p>
+
+
+
+<ul>
+<% @cocktail.doses.each do |dose| %>
+<li> <%= "#{dose.ingredient.name} - #{dose.description}" %> </li>
+<% end %>
+
+</ul>
+
+
+
+<br>
+<br>
+<%= link_to "back to the list", cocktails_path %>
+
+<p>Click right here to add an ingredient :</p>
+<button type="button" class="btn btn-danger">
+  <%= link_to new_cocktail_dose_path(@cocktail) do %>
+    <i class="far fa-edit"></i>
+  <% end %>
+
+</button>
+

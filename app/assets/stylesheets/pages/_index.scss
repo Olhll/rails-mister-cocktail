@@ -1,2 +1,26 @@
 // Import page-specific CSS files here.
 @import "home";
+
+.navbar-lewagon {
+  // [...]
+  background-color: transparent;
+  transition: 0.5s background-color ease;
+}
+
+.navbar-lewagon-white {
+  background-color: white;
+}
+
+.home-banner {
+  background-image: url('https://source.unsplash.com/1600x900/?cocktail,night');
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  padding-top: 40vh;
+
+  h1 {
+    font-size: 120px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+  }
+}
